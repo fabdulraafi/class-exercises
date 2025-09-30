@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Application</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Welcome to the Finance App</h1>
+    </header>
+
+    <main>
+        
+        <section class="content-section" id="interactionSection">
+            <h2>Account Balance</h2>
+            <p>Enter the amount spent last month</p>
+
+            <div class="input-container">
+
+                <input 
+                    type="text" 
+                    placeholder="Type something..."
+                    class="styled-input" 
+                    id="dataInput"
+                >
+                
+                <!-- BUTTON ELEMENT -->
+                <button id="submitButton" class="action-button">
+                    Submit Data
+                </button>
+            </div>
+
+            <!-- Message Area (for JavaScript initial test and feedback) -->
+            <p id="feedbackMessage" class="feedback-text"></p>
+            
+
+            <div id="outputContainer">
+
+            </div>
+
+        </section>
+
+        <section class="content-section">
+            <h3>More Content</h3>
+            <p>The website is under maintainance. New updates coming soon.</p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; Finance App</p>
+    </footer>
+
+    <script src="first.js" defer></script>
+</body>
+</html>
