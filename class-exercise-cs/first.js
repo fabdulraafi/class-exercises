@@ -1,12 +1,9 @@
-// ---------------------------------------------------
-// JavaScript file (script.js) for handling interaction
-// ---------------------------------------------------
 
-// Exercise 2: Create a new function to abstract creating HTML structure
+
 // This function moves previous logic from button click event listener
 function createHTML(inputElement, outputContainer, testOutput) {
     
-    // Exercise 2: Add initial basic checks for input value from HTML selector
+    //  Add initial basic checks for input value from HTML selector
     const inputValue = inputElement.value.trim();
 
     if (inputValue) {
@@ -67,18 +64,18 @@ function app() {
             createHTML(inputElement, outputContainer, testOutput); 
         });
 
-        // Exercise 1: Add event listener for keypress on object for input from DOM
+        //Add event listener for keypress on object for input from DOM
         inputElement.addEventListener('keypress', function(event) {
             
-            // Exercise 1: Add initial code to check functionality of keypress, e.g. log to console
+            // Add initial code to check functionality of keypress, e.g. log to console
             console.log(`Key pressed: ${event.key} (Code: ${event.keyCode})`);
 
-            // Exercise 3: Use abstracted function when 'Enter' key is pressed
+            //Use abstracted function when 'Enter' key is pressed
             if (event.key === 'Enter' || event.keyCode === 13) {
                 // Prevent form submission/default behavior to keep the page clean
                 event.preventDefault(); 
                 
-                // Exercise 3: Replace hard coded logic with call to abstracted function
+                // Replace hard coded logic with call to abstracted function
                 createHTML(inputElement, outputContainer, testOutput); 
             }
         });
